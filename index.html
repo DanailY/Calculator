@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+
+<body>
+    <header>
+        <h1>JavaScript Calculator</h1>
+    </header>
+
+<section>
+
+    <input type="text" id="display" disabled>
+    <table>
+        <tr>
+            <td colspan="2"><input class="special-button" type="button" value="CE" onclick="backspace('CE')"></td>
+            <td colspan="2"><input class="special-button" type="button" value="C" onclick="clearValue('C')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value='7' onclick="addToScreen('7')"></td>
+            <td><input class="button" type="button" value="8" onclick="addToScreen('8')"></td>
+            <td><input class="button" type="button" value="9" onclick="addToScreen('9')"></td>
+            <td><input class="button" type="button" value="/" onclick="addToScreen('/')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="addToScreen('4')"></td>
+            <td><input class="button" type="button" value="5" onclick="addToScreen('5')"></td>
+            <td><input class="button" type="button" value="6" onclick="addToScreen('6')"></td>
+            <td><input class="button" type="button" value="*" onclick="addToScreen('*')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="1" onclick="addToScreen('1')"></td>
+            <td><input class="button" type="button" value="2" onclick="addToScreen('2')"></td>
+            <td><input class="button" type="button" value="3" onclick="addToScreen('3')"></td>
+            <td><input class="button" type="button" value="-" onclick="addToScreen('-')"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="0" onclick="addToScreen('0')"></td>
+            <td><input class="button" type="button" value="." onclick="addToScreen('.')"></td>
+            <td><input class="button" type="button" value="=" onclick="operationClick('=')"></td>
+            <td><input class="button" type="button" value="+" onclick="addToScreen('+')"></td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>
