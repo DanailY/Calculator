@@ -1,9 +1,5 @@
-var box;
+var box = document.getElementById('display');
 var maxLength = 16;
-
-window.onload = function() {
-    box = document.getElementById('display');
-};
 
 function addToScreen(x) {
     if(box.value.length + 1 > maxLength){
